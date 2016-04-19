@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>ShortView</title>
+
+    <script src="bower_components/modernizr/modernizr.js"></script>
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="bower_components/d3/d3.min.js"></script>
+    <script src="bower_components/c3/c3.min.js"></script>
+    <link href="bower_components/c3/c3.min.css" rel="stylesheet"/>
+    <script src="bower_components/moment/min/moment.min.js"></script>
+    <script src="bower_components/angular/angular.min.js"></script>
+    <script src="bower_components/angular-route/angular-route.min.js"></script>
+    <script src="bower_components/foundation/js/foundation.min.js"></script>
+    <link href="bower_components/foundation/css/foundation.min.css" rel="stylesheet"/>
+
+
+    <script src="js/app.js"></script>
+    <script src="js/routes.js"></script>
+    <script src="js/controllers/mainCtrl.js"></script>
+    <script src="js/controllers/cpuCtrl.js"></script>
+    <script src="js/controllers/ramCtrl.js"></script>
+</head>
+<body ng-app="ServerStats">
+<nav class="top-bar" data-topbar role="navigation">
+    <ul class="title-area">
+        <li class="name">
+            <h1><a href="/">ShortView</a></h1>
+        </li>
+        <li class="toggle-topbar menu-icon"><a href="/"><span>Menu</span></a></li>
+    </ul>
+
+    <section class="top-bar-section">
+        <ul class="left">
+            <li>
+                <a href="/">Edit Hosts</a>
+            </li>
+            <li>
+                <a href="/cpu">CPU Stats</a>
+            </li>
+            <li>
+                <a href="/ram">RAM Stats</a>
+            </li>
+        </ul>
+    </section>
+</nav>
+<section class="main-section full-height">
+    <br>
+    <div class="row">
+        <div class="panel">
+            <br>
+            <div class="content-view" ng-view>
+        </div>
+    </div>
+</section>
+
+<script>
+    $(document).foundation();
+</script>
+</body>
+</html>

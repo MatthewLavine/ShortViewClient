@@ -1,0 +1,10 @@
+<div class="row full-height">
+    <div class="large-12 columns full-height">
+        <div ng-repeat="host in hostList track by $index" style="text-align: center">
+            <h5>{{host.ip}}</h5>
+            <div id="chart{{$index}}"></div>
+            RAM: ~{{data[$index].mem_Total.slice(-1).pop()/1000}} MB Total
+            <hr ng-if="hostList.length > 1 && $index != hostList.length-1">
+        </div>
+    </div>
+</div>

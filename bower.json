@@ -1,0 +1,25 @@
+{
+  "name": "ShortView",
+  "main": "index.js",
+  "authors": [
+    "Matthew Lavine <matt@matthewlavine.net>"
+  ],
+  "description": "",
+  "moduleType": [],
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular-route": "~1.4.7",
+    "angular": "~1.4.7",
+    "c3": "~0.4.10",
+    "foundation": "~5.5.3",
+    "moment": "~2.10.6"
+  }
+}
